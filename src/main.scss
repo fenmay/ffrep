@@ -7,3 +7,37 @@ body * {
   // outline: 1px solid lightgrey;
   
 }
+
+.firblock {
+  display: inline-block;
+  width: 20%;
+  height: 100px;
+}
+
+.secblock {
+  display: inline-block;
+  width: 50%;
+  height: 100px;
+}
+
+.thirblock {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 40%;
+  height: 250px;
+}
+
+.fourblock {
+  display: inline-block;
+  width: 33%;
+  height: 400px;
+}
+
+.blank {
+  height: 70px;
+}
+
+.fiveblock {
+  height: 100px;
+}
