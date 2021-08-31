@@ -4,40 +4,67 @@ html {
 }
 
 body * {
-  // outline: 1px solid lightgrey;
+   outline: 1px solid lightgrey;
   
 }
 
-.firblock {
-  display: inline-block;
-  width: 20%;
-  height: 100px;
+.container {
+  padding: 26px 19px 0;
+
 }
 
-.secblock {
-  display: inline-block;
+.header {
   width: 50%;
   height: 100px;
+  background-color: aquamarine;
+  margin: 0 auto;
 }
 
-.thirblock {
-  display: inline-block;
-  margin-left: 50px;
-  margin-right: 50px;
-  width: 40%;
-  height: 250px;
+.two-columns {
+  display: flex;
 }
 
-.fourblock {
-  display: inline-block;
-  width: 33%;
-  height: 400px;
+.two-columns_item {
+  width: 50%;
+  padding: 34px;
+  box-sizing: border-box;
 }
 
-.blank {
-  height: 70px;
+.green {
+  height: 100px;
+  background-color: green;
 }
 
-.fiveblock {
+.three-columns {
+  display: flex;
+}
+
+.three-columns_item {
+   width: 33.3%;
+   box-sizing: border-box;
+ }
+
+.red,
+.blue,
+.yellow {
   height: 100px;
 }
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.footer {
+  width: 50%;
+  height: 100px;
+  background-color: rgb(73, 85, 81);
+  margin: 0 auto;
+  }
