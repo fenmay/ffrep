@@ -1,3 +1,7 @@
+body {
+  padding: 10px 10% 10px 10%;
+}
+
 .logo_big {
   float: left;
   height: 80px;
@@ -9,12 +13,62 @@
   float: left;
   height: 100%;
   width: 25%;
-   
+  margin-right: 10px; 
   }
 
 .logo_text {
-  margin: 0 10px;
+  padding: 0 10px;
   align-items: center;
   justify-content: center;
+  position: flex;
+  }
+
+  .menu_big {
+    float: right;
+    }
+
+  .menu_s {
+    display: inline-block;
+  }
+
+  .big_orange {
+    margin-left: -13.5%;
+    width: 100vw;
+    height: 40vh;
+    background-image: url('./img/orange1.jpg');
+    border-top: orange solid 4px;
+    border-bottom: orange solid 4px;
 
   }
+
+  .clearfix {
+    clear: both;
+  }
+
+  .questions {
+    padding: 30vh 70% 10vh 10%;
+  }
+
+  .qe1 {
+    background-color: black;
+    font-size: 20px;
+    font-family: 'Tahoma';
+    color: orange;
+  }
+
+  .qe2 {
+    background-color: orange;
+    font-size: 20px;
+    font-family: 'Tahoma';
+    color: 000000;
+  }
+
+  .top_columns {
+    display: inline-block;
+    width: 24%;
+    height: 30vh;
+    font-size: 9px;
+    align: left;
+    padding: 2px
+  }
+
