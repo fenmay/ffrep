@@ -1,0 +1,31 @@
+.transparent_block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  
+}
+
+.modal_block {
+  position: fixed;
+  top: 33%;
+  left: 33%;
+  display: inline-block;
+  width: 33%;
+  height: 33%;
+  background-color: #FFFFFF;
+}
+
+.close {
+  position: fixed;
+  top: 32%;
+  right: 33.33%;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+ 
+}
