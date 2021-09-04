@@ -1,5 +1,6 @@
 body {
   padding: 0 10%;
+  font-family: "Tahoma";
 }
 
 .logo_big {
@@ -8,70 +9,90 @@ body {
 
 
 .menu_big {
-    float: right;
-    text-align: center;
-    vertical-align: middle;
-    height: 130px;
-    }
-
-  .menu_img {
-    margin: 20px 30px;
-    display: inline-block;
-   }
-
-    .menu-text {
-    font-family: "Tahoma";
-    color: #9e9b9b;
-    display: inline-flex;
-    }
-
-  .big_orange {
-    margin-left: -13.5%;
-    margin-right: -13.4%;
-    background-size: 100vw;
-    height: 320px;
-    background-image: url('./img/big-orange-bg.png');
-    background-repeat: no-repeat;
-    border-top: orange solid 4px;
-    border-bottom: orange solid 4px;
-    
-       
-
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+  height: 130px;
   }
 
-  .clearfix {
-    clear: both;
+.menu_img {
+  margin: 20px 30px;
+  display: inline-block;
   }
 
-  .questions {
-    margin: 15vh 60% 10vh 11%;
-    font-family: 'Tahoma';
-    font-size: 40px;
-    display: inline-flex;
-    flex-direction: column;
-    
+.menu-text {
+  color: #9e9b9b;
+  display: inline-flex;
+  }
+
+.big_orange {
+  margin-left: -13.5%;
+  margin-right: -13.4%;
+  background-size: 100vw;
+  height: 320px;
+  background-image: url('./img/big-orange-bg.png');
+  background-repeat: no-repeat;
+  border-top: orange solid 4px;
+  border-bottom: orange solid 4px;
+  }
+
+.clearfix {
+  clear: both;
+  }
+
+.questions {
+  margin: 15vh 60% 10vh 11%;
+  font-size: 40px;
+  display: inline-flex;
+  flex-direction: column;
   }
 
   
-  .qe1 {
-    background-color: rgba(0, 0, 0, 0.822);
-    color: orange;
-    margin-bottom: 10px;
+.qe1 {
+  background-color: rgba(0, 0, 0, 0.822);
+  color: orange;
+  margin-bottom: 10px;
   }
 
-  .qe2 {
-    background-color: rgba(255, 166, 0, 0.808);
-    color: black;
+.qe2 {
+  background-color: rgba(255, 166, 0, 0.808);
+  color: black;
   }
 
-  .top_columns {
-    padding-left: 5px;
-    display: inline-flex;
-    width: 24%;
-    height: 30vh;
-    font-size: 10px;
-    align: left;
-    padding: 2px
+.top_columns {
+  display: inline-block;
+  width: 24%;
+  font-size: 12px;
+  margin-top: 3vh;
   }
 
+.read_more {
+  text-align: right;
+  padding: 2px;
+  color: orange;
+ }
+
+.header {
+  color: orange;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 3vh;
+  text-decoration: underline;
+}
+
+.team {
+  border: yellowgreen solid 3px;
+  display: inline-block;
+  width: 25%;
+  font-size: 12px;
+  margin: 3vh auto;
+
+}
+
+.team_avatar {
+  border-radius: 50%;
+  border: orange solid 4px;
+  width: 25%;
+  
+}
  
