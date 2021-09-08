@@ -1,7 +1,13 @@
+@import './sprites.scss';
+@font-face {
+  font-family: 'Bebas';
+  src: url('../fonts/Bebas.ttf');
+}
+
+
 body {
   padding: 0 10%;
-  font-family: "Tahoma";
-}
+ }
 
 .logo_big {
   float: left;
@@ -13,6 +19,7 @@ body {
   text-align: center;
   vertical-align: middle;
   height: 130px;
+  
   }
 
 .menu_img {
@@ -45,6 +52,7 @@ body {
   font-size: 40px;
   display: inline-flex;
   flex-direction: column;
+  font-family: 'Bebas';
   }
 
   
@@ -63,8 +71,9 @@ body {
   display: inline-block;
   width: 24%;
   font-size: 12px;
-  margin-top: 3vh;
+  padding-top: 1vh;
   }
+  
 
 .read_more {
   text-align: right;
@@ -81,9 +90,10 @@ body {
 }
 
 .team {
-  border: yellowgreen solid 3px;
+  //border: yellowgreen solid 1px;
   display: inline-block;
-  width: 25%;
+  text-align: center;
+  width: 33%;
   font-size: 12px;
   margin: 3vh auto;
 
@@ -92,7 +102,29 @@ body {
 .team_avatar {
   border-radius: 50%;
   border: orange solid 4px;
-  width: 25%;
+  width: 80%;
+  ;
   
+}
+
+.name_job {
+ font-size: 18px;
+ margin-bottom: 3vh;
+  
+}
+
+.team_name {
+ // border: brown solid 1px;
+  display: inline;
+
+}
+
+.team_job {
+ // border: chartreuse solid 1px;
+  display: inline;
+  color: orange;
+  
+
+
 }
  
