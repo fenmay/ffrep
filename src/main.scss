@@ -113,6 +113,7 @@ body {
   border-radius: 50%;
   border: orange solid 4px;
   width: 80%;
+  margin-bottom: 3vh;
     
 }
 
@@ -136,7 +137,38 @@ body {
 }
  
 .team_descript {
-  width: 70%;
+  width: 60%;
   display: inline-block;
+  text-align: left;
   //border: black solid 1px;
+}
+
+.form_name {
+  margin-top: 3vh;
+  padding-left: 5%;
+}
+
+.form_names {
+  display: flex;
+  flex-direction: column;
+  color: orange;
+  font-family: 'StMarie';
+  width: 20%;
+   
+}
+
+.field_container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 80%;
+  }
+
+.send_message {
+  display: inline-flex;
+  width: 100%;
+ // margin-top: 3vh;
+}
+
+.field {
+ margin-top: 3vh;
 }
