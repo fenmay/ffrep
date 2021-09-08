@@ -3,6 +3,10 @@
   font-family: 'Bebas';
   src: url('../fonts/Bebas.ttf');
 }
+@font-face {
+  font-family: 'StMarie';
+  src: url('../fonts/StMarie.otf');
+}
 
 
 body {
@@ -71,7 +75,9 @@ body {
   display: inline-block;
   width: 24%;
   font-size: 12px;
-  padding-top: 1vh;
+  padding: 1vh 1px;
+  font-family: 'Calibri';
+  font-weight: bold;
   }
   
 
@@ -87,15 +93,19 @@ body {
   text-align: center;
   margin-top: 3vh;
   text-decoration: underline;
+  font-family: 'StMarie';
+  font-weight: bold;
 }
 
 .team {
   //border: yellowgreen solid 1px;
   display: inline-block;
   text-align: center;
+  vertical-align: top;
   width: 33%;
   font-size: 12px;
   margin: 3vh auto;
+  font-family: 'Calibri';
 
 }
 
@@ -103,8 +113,7 @@ body {
   border-radius: 50%;
   border: orange solid 4px;
   width: 80%;
-  ;
-  
+    
 }
 
 .name_job {
@@ -124,7 +133,10 @@ body {
   display: inline;
   color: orange;
   
-
-
 }
  
+.team_descript {
+  width: 70%;
+  display: inline-block;
+  //border: black solid 1px;
+}
