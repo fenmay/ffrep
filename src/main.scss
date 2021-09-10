@@ -99,7 +99,6 @@ body {
 }
 
 .team {
-  //border: yellowgreen solid 1px;
   display: inline-block;
   text-align: center;
   vertical-align: top;
@@ -125,14 +124,12 @@ body {
 }
 
 .team_name {
- // border: brown solid 1px;
-  display: inline;
+ display: inline;
 
 }
 
 .team_job {
- // border: chartreuse solid 1px;
-  display: inline;
+ display: inline;
   color: orange;
   
 }
@@ -141,7 +138,7 @@ body {
   width: 60%;
   display: inline-block;
   text-align: left;
-  //border: black solid 1px;
+  
 }
 
 .form_name {
@@ -188,9 +185,15 @@ body {
   border-top: 0;
   border-left: 0;
   border-right: 0;
-   
-}
+ }
 
-.message {
-  line-height: 2em;
+ .footer {
+  margin-left: -13.5%;
+  margin-right: -13.4%;
+  background-color: orange;
+  font-family: 'StMarie';
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 1vh;
+  margin-top: 3vh;
 }
