@@ -29,6 +29,7 @@ body {
 .menu {
   margin: 20px 30px;
   display: inline-block;
+  text-align: left;
   }
 
 .menu-text {
@@ -219,6 +220,28 @@ body {
   margin-top: 5%;
 }
 
+.hid2:hover .text_hid2 {
+  display: block;
+}
+
+.text_hid2 {
+  display: none;
+  position: absolute;
+  top: 48%;
+  left: 90%;
+  padding: 10%;
+  color: #9e9b9b;
+  background-color: #FFFFFF;
+  border: #9e9b9b solid 2px;
+  width: max-content;
+}
+
+.sec_hid_text {
+  text-align: left;
+  border-bottom: #9e9b9b solid 1px;
+  margin-top: 5%;
+}
+
 @media (min-width: 550px) and (max-width: 1090px) {
   body {
     padding: 0 5%;
@@ -303,6 +326,17 @@ body {
     margin-left: 75%;
     font-size: 16px;
   }
+
+  .submit:hover {
+    color: #000000;
+  }
+
+  .submit:active {
+    position: relative;
+    bottom: 1px;
+    left: 1px;
+  }
+
   .form_names {
     width: 25%;
     font-weight: bold;
