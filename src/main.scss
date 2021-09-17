@@ -23,7 +23,6 @@ body {
   text-align: center;
   vertical-align: middle;
   height: 130px;
-  
   }
 
 .menu {
@@ -54,10 +53,13 @@ body {
   }
 
 .questions {
-  margin: 15vh 60% 10vh 11%;
+  width: 50%;
+  height: 320px;
   font-size: 40px;
   display: inline-flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: 'Bebas';
   }
 
@@ -66,30 +68,51 @@ body {
   background-color: rgba(0, 0, 0, 0.822);
   color: orange;
   margin-bottom: 10px;
+  width: fit-content;
   }
 
 .qe2 {
   background-color: rgba(255, 166, 0, 0.808);
   color: black;
+  width: fit-content;
   }
 
 .top_columns {
-  display: inline-block;
-  width: 24%;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
   font-size: 12px;
   padding: 1vh 1px;
   font-family: 'Calibri';
   font-weight: bold;
   }
   
+.text_columns {
+  display: flex;
+  flex-direction: column;
+ }
 
 .read_more {
   text-align: right;
   padding: 2px;
   color: orange;
   font-style: italic;
- }
+  }
 
+.acc_input {
+  display: none;
+}
+
+.acc_content {
+  max-height: 80px;
+  overflow: hidden;
+  transition: max-height 1.5s ease;
+}
+
+.acc_input:checked ~ .acc_content {
+  max-height: 100vh;
+}
+ 
 .header {
   color: orange;
   font-size: 30px;
@@ -142,36 +165,24 @@ body {
   
 }
 
-.form_name {
-  margin-top: 3vh;
-  padding-left: 5%;
-}
-
 .form_names {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   color: orange;
   font-family: 'StMarie';
-  width: 20%;
   font-weight: bold;
   font-size: 16px;
-   
+  margin-top: 3vh;
+    
 }
 
-.field_container {
-  display: inline-flex;
-  flex-direction: column;
-  width: 80%;
-  }
-
-.send_message {
-  display: inline-flex;
-  width: 100%;
- }
-
 .field {
- margin-top: 3vh;
- background-color: #f8f7f6;
+  display: inline-flex;
+  align-items: center;
+  width: 90%;
+  margin-left: 20px;
+  background-color: #f8f7f6;
+  
 }
 
 .submit {
@@ -182,11 +193,21 @@ body {
   font-size: 16px;
   color: #FFFFFF;
   background-color: orange;
-  border-bottom: rgb(238, 142, 17) solid 2px;
+  border-bottom: rgb(238, 142, 17) solid 4px;
   border-top: 0;
   border-left: 0;
   border-right: 0;
  }
+
+.submit:hover {
+  color: #000000;
+}
+
+.submit:active {
+  position: relative;
+  top: 2px;
+  right: 2px;
+}
 
  .footer {
   margin-left: -13.5%;
@@ -199,14 +220,15 @@ body {
   margin-top: 3vh;
 }
 
-.bg-about_icon:hover .hidden_menu {
+.menu_with_fir_hidden:hover .hidden_menu {
   display: block;
 }
 
 .hidden_menu {
   display: none;
   position: relative;
-  top: 100%;
+  top: 145%;
+  right: 300%;
   padding: 10%;
   color: #9e9b9b;
   background-color: #FFFFFF;
@@ -215,7 +237,7 @@ body {
 }
 
 .hid_text {
-  text-align: left;
+  text-align: right;
   border-bottom: #9e9b9b solid 1px;
   margin-top: 5%;
 }
@@ -228,7 +250,7 @@ body {
   display: none;
   position: absolute;
   top: 48%;
-  left: 90%;
+  right: 90%;
   padding: 10%;
   color: #9e9b9b;
   background-color: #FFFFFF;
