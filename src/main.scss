@@ -1,98 +1,37 @@
-@font-face {
-  font-family: 'PT Sans';
-  src: url('../Fonts/PT Sans.ttf');
-}
-
-body {
-  padding: 0 10%;
-}
-
-.columns {
-  display: inline-flex;
-  flex-direction: row;
-  
-}
-
-.left_column {
-  width: 66.67%;
-  padding: 0 1%;
-  margin-right: 10px;
-}
-
-.right_column {
-  width: 33.33%;
-  border: royalblue solid 1px;
-  padding: 0 1%;
-}
-
-.head {
-  font-family: 'PT Sans';
-  font-size: 14px;
-  width: 100%;
-  display: inline-flex;
-  flex-direction: row;
-  //border: red solid 1px;
+.rating {
+	width: 300px;
+	margin: 0 auto;
   }
 
-.bg_black {
-  width: 25%;
-  background-color: #000000;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 4px;
-  align-content: center;
-  justify-content: center;
+input {
+	display: none;
 }
 
-.bg_gray {
-  display: inline-flex;
-  flex-direction: row;
-  background-color: rgb(233, 231, 231);
-  width: 75%;
+label {
+  float: right;
+	width: 40px;
+	font-size: 32px;
+	color: rgb(167, 142, 142);
 }
 
-.bg_gray_left {
-  padding: 4px;
-  text-align: center;
-  width: 30%;
+label:before {
+	content: '★';
 }
 
-.bg_gray_right {
-  padding: 4px;
-  text-align: left;
-  width: 45%;
+input:checked ~ label {
+	color: gold;
+	
 }
 
-.top_slider {
-  background-color: rgb(233, 231, 231);
-  margin-top: 3vh;
-  display: inline-flex;
-  flex-direction: row;
-  width: 100%;
-  
+label:hover,
+label:hover ~ label {
+	color: gold;
 }
 
-.slider_img {
-  float: left;
-  //width: 40vw;
-  height: auto;
-}
-
-.ts_news {
-  padding: 20px;
-  width: 20vw;
-
-}
-
-.ts_head {
-  color: rgb(212, 14, 14);
-  font-family: 'PT Serif';
-  font-size: 30px;
-  margin-bottom: 2vh;
-}
-
-.ts_text {
-  font-family: 'PT Serif';
-  font-size: 15px;
-  
+input:checked + label:hover,
+input:checked + label:hover ~ label,
+input:checked ~ label:hover,
+input:checked ~ label:hover ~ label,
+label:hover ~ input:checked ~ label {
+	color: gold;
 }
