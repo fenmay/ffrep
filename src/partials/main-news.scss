@@ -1,0 +1,16 @@
+.main_news {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 1vh 1.4vw 0 0;
+    font-family: 'PT Sans';
+    font-size: 14px;
+}
+
+.cam:after {
+    content: url(../img/Icons/bw-photo.png);
+    display: inline;
+}
+
+.mnimg {
+    margin-bottom: 0.5vh;
+}

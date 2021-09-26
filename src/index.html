@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./Fonts/PT Sans.ttf">
     <link rel="stylesheet" href="./main.scss">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <title>News</title>
     <script src="./js/main.js" defer></script>
   </head>
@@ -24,15 +28,173 @@
             </div>
           </div>
         </div>
-        <div class="top_slider">
-          <img src="./img/Big slider/Jurgen.png" alt="slider image" class="slider_img">
-          <div class="ts_news">
-            <div class="ts_head">
-              Jurgen Klopp makes a sexy Liverpool
+
+        <!-- Slider main container -->
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./img/Big slider/Jurgen.png" alt="slider image" class="slider_img">
+              <div class="ts_news">
+                <div class="ts_head">
+                  Jurgen Klopp makes a sexy Liverpool
+                </div>
+                <div class="ts_text">
+                  Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp
+                 </div>
+               </div>
             </div>
-            <div class="ts_text">
-              Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp
+            <div class="swiper-slide">
+              <img src="./img/Big slider/Jurgen.png" alt="slider image" class="slider_img">
+              <div class="ts_news">
+                <div class="ts_head">
+                  Jurgen Klopp makes a sexy Liverpool
+                </div>
+                <div class="ts_text">
+                  Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp
+                 </div>
+               </div>
             </div>
+            <div class="swiper-slide">
+              <img src="./img/Big slider/Jurgen.png" alt="slider image" class="slider_img">
+              <div class="ts_news">
+                <div class="ts_head">
+                  Jurgen Klopp makes a sexy Liverpool
+                </div>
+                <div class="ts_text">
+                  Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp
+                 </div>
+               </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+
+        
+        @@include('./partials/_header1.html', {
+          "color": "blue",
+          "HeaderName": "Main News"
+        })
+        </div>
+        <div class="mnews">
+          @@include('./partials/_main-news.html', {
+            "pathToImage": './img/Main news/mn1.png',
+            "mainNewsHead": "The FIFA Ballon d'Or is an annual association football award given by FIFA"
+          })
+          @@include('./partials/_main-news.html', {
+            "pathToImage": './img/Main news/mn2.png',
+            "mainNewsHead": "Messi got some balloons"
+          })
+          @@include('./partials/_main-news.html', {
+            "pathToImage": './img/Main news/mn3.png',
+            "mainNewsHead": "CR7 also, but not so much"
+          })
+          @@include('./partials/_main-news.html', {
+            "pathToImage": './img/Main news/mn4-1.png',
+            "mainNewsHead": "Ribery got vase!",
+            "cam": "cam"
+          })
+        </div>
+
+        <div class="last_and_feed">
+          <div class="news">
+            <div class="last_news">
+              @@include('./partials/_header1.html', {
+                "color": "lighter_blue",
+                "HeaderName": "Last News"
+              }) 
+              <ul class="list_news"  type="disc">
+                <li>@@include('./partials/_news_list.html', {
+                  "NewsHeader": "Real Madrid players to gaffer: up and at 'em!"
+                })</li>
+                <li>@@include('./partials/_news_list.html', {
+                  "NewsHeader": "Swedes indebted to talismanic Ibrahimovic",
+                  "PathToSite": "marca.com"
+                })
+                <a href="http:/marca.com" class="site">marca.com</a></li>
+                <li>@@include('./partials/_news_list.html', {
+                  "NewsHeader": "2016 European Championship to go ahead in France"
+                })</li>
+                <li>@@include('./partials/_news_list.html', {
+                  "NewsHeader": "Ancelotti: &#8220Premier League return is my no. 1 choice&#8221"
+                }) </li>
+                <li>@@include('./partials/_news_list.html', {
+                  "NewsHeader": "Walters double secures Euro 2016 spot for Ireland"
+                })</li>
+                <li>@@include('./partials/_news_list.html', {
+                  "NewsHeader": "&#8220They intended to set off an explosive inside the stadium&#8221 - eyewitness"
+                })</li>
+                <li>@@include('./partials/_news_list.html', {
+                  "NewsHeader": "Raúl bids goodbye in style",
+                  "cam": "camera",
+                  "vid": "video"
+                })</li>
+                <li>@@include('./partials/_news_list.html', {
+                  "NewsHeader": "Five reasons Belgium vs. Spain was called off"
+                })</li>
+                <li>@@include('./partials/_news_list.html', {
+                  "NewsHeader": "Niggles won't keep Benzema out of 'Clásico'"
+                })</li>
+                <li>@@include('./partials/_news_list.html', {
+                  "NewsHeader": "Abdeslam suspected to have been near King Baudouin Stadium"
+                }) </li>
+                
+                </ul>
+            </div>
+            <div class="newsfeed">
+              @@include('./partials/_header1.html', {
+                "color": "lighter_blue",
+                "HeaderName": "Newsfeed"
+              })
+              <div class="head_news">
+                <img src="./img/News feed/nf1.png" alt="news feed" class="feed_img">
+                Zlatan Ibrahimovic on target as Sweden qualify with draw in Denmark
+              </div>
+              <ul style="clear: left" type="disc">
+                <li>@@include('./partials/_news_list.html', {
+                  "NewsHeader": "Alvaro Morata insists Juventus are “still hungry” and targets victory over Milan on Saturday."
+                })</li>
+                <li>@@include('./partials/_news_list.html', {
+                  "NewsHeader": "Ecuador stay perfect as Argentina, Brazil win",
+                  "vid": "video"
+                })</li>
+                <li>@@include('./partials/_news_list.html', {
+                  "NewsHeader": "Sweden, Ukraine complete Euro line-up"
+                })
+                <a href="http:/fifa.com" class="site">fifa.com</a></li>
+                <li>@@include('./partials/_news_list.html', {
+                  "NewsHeader": "Aubameyang penalty gives Gabon World Cup joy"
+                })</li>
+                
+                
+                
+                
+              </ul> 
+
+            </div>
+          </div>
+          <div class="photonews">
+            @@include('./partials/_photonews.html', {
+              "pathToImage": './img/For photo/ph1.png',
+              "PhotoNewsHead": "Here is how Leage Champions trophy looks like"
+            })
+            @@include('./partials/_photonews.html', {
+              "pathToImage": './img/For photo/ph2.png',
+              "PhotoNewsHead": "Casillas got some piece of paper"
+            })
+            @@include('./partials/_photonews.html', {
+              "pathToImage": './img/For photo/ph3.png',
+              "PhotoNewsHead": "Bayern Munich vs Barcelona. Fangirls :&#41"
+            })
           </div>
         </div>
       </section>
