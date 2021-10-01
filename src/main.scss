@@ -2,6 +2,8 @@
 @import './partials/header1.scss';
 @import './partials/news_list.scss';
 @import './partials/photonews.scss';
+@import './partials/videonews.scss';
+@import './partials/int st.scss';
 
 
 @font-face {
@@ -11,6 +13,7 @@
 
 body {
   padding: 0 15%;
+  font-family: 'PT Sans';
 }
 
 .columns {
@@ -21,18 +24,17 @@ body {
 
 .left_column {
   width: 66.67%;
-  padding: 0 1%;
-  margin-right: 10px;
+  padding: 0 2%;
+  
 }
 
 .right_column {
   width: 33.33%;
-  border: royalblue solid 1px;
-  padding: 0 1%;
+ 
 }
 
 .head {
-  font-family: 'PT Sans';
+  
   font-size: 14px;
   width: 100%;
   display: inline-flex;
@@ -74,8 +76,6 @@ body {
   margin: 3vh 0 0 0;
   display: inline-flex;
   flex-direction: row;
- // width: 100%;
-  //height: 100%;
   border-bottom: red solid 4px;
 }
 
@@ -107,7 +107,8 @@ body {
 .mnews {
   display: inline-flex;
   flex-direction: row;
-  width: 66.67%;
+  width: 60%;
+  margin-bottom: 4vh;
 }
 
 .list_news {
@@ -117,7 +118,7 @@ body {
 }
 
 .head_news {
-  font-family: "PT Sans";
+  
   font-size: 14px;
   font-weight: bold;
   margin-right: 0.5vw;
@@ -137,11 +138,10 @@ body {
 
 .site {
   color: #cccccc;
-  font-family: 'PT Sans';
   font-size: 11px;
   display: inline;
   line-height: 20px;
-  margin-left: 5px;
+  margin-left: 1px;
 }
 
 .last_and_feed {
@@ -150,7 +150,7 @@ body {
 }
 
 .photonews {
-  width: 33.33%;
+  width: 40%;
   display: inline-flex;
   flex-direction: column;
   margin-left: 2vw;
@@ -173,3 +173,73 @@ body {
   right: 10%;
 }
 
+.swiper-pagination:root {
+  color: red;
+}
+
+.header2::before {
+  content: '';
+  border-bottom: #333333 solid 3px;
+  display: block;
+  flex: 1 0 auto;
+  margin-right: 5px;
+  height: 0;
+  position: relative;
+  top: 11px;
+}
+
+.header2::after {
+  content: '';
+  border-bottom: #333333 solid 3px;
+  display: block;
+  flex: 1 0 auto;
+  margin-left: 5px;
+  height: 0;
+  position: relative;
+  top: 11px;
+}
+
+.header2 {
+  color: #6a0099;
+  font-size: 18px;
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 1vh;
+}
+
+.more_vid {
+  color: #3d76cc;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+
+.for_video {
+  border-bottom: #333333 solid 3px;  
+}
+
+.int_stat {
+  height: 72px;
+  display: flex;  
+  align-items: flex-end;
+  color: #333333;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: #333333 solid 3px;
+}
+
+.interesting {
+  border-bottom: #333333 solid 4px;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #3d76cc;
+}

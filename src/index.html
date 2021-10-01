@@ -28,12 +28,8 @@
             </div>
           </div>
         </div>
-
-        <!-- Slider main container -->
         <div class="swiper">
-        <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
               <img src="./img/Big slider/Jurgen.png" alt="slider image" class="slider_img">
               <div class="ts_news">
@@ -41,7 +37,7 @@
                   Jurgen Klopp makes a sexy Liverpool
                 </div>
                 <div class="ts_text">
-                  Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp
+                 <a href="">Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp</a> 
                  </div>
                </div>
             </div>
@@ -52,7 +48,7 @@
                   Jurgen Klopp makes a sexy Liverpool
                 </div>
                 <div class="ts_text">
-                  Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp
+                  <a href="">Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp</a>
                  </div>
                </div>
             </div>
@@ -63,23 +59,15 @@
                   Jurgen Klopp makes a sexy Liverpool
                 </div>
                 <div class="ts_text">
-                  Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp
+                  <a href="">Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp</a>
                  </div>
                </div>
             </div>
           </div>
-          <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
 
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
-        </div>
-
-        
         @@include('./partials/_header1.html', {
           "color": "blue",
           "HeaderName": "Main News"
@@ -209,11 +197,72 @@
         </div>
       </section>
       <section class="right_column">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quas esse consequatur ea, amet accusantium reprehenderit maxime quisquam pariatur dolores dolore facere tenetur ipsam ut eligendi velit laborum unde doloremque.
-        Quod provident voluptatem asperiores in facere ipsam corrupti quaerat, earum, quibusdam tempora veritatis impedit pariatur tempore dolores iure harum voluptatum commodi nihil totam saepe molestiae. Eius omnis animi praesentium voluptatum!
+        <div class="header2">
+          Видео
+        </div>
+        <div class="for_video">
+          @@include('./partials/_videonews.html', {
+            "pathToVideoPrev": './img/For video/vid1.png',
+            "VideoNewsHead": "Фильм дня: Гитлер Капут!"
+          })
+          @@include('./partials/_videonews.html', {
+            "pathToVideoPrev": './img/For video/vid2.png',
+            "VideoNewsHead": "Ксения Собчак беременна"
+          })
+          @@include('./partials/_videonews.html', {
+            "pathToVideoPrev": './img/For video/vid3.png',
+            "VideoNewsHead": "Группа парней избила влюбленную пару бейсбольной битой"
+          })
+          @@include('./partials/_videonews.html', {
+            "pathToVideoPrev": './img/For video/vid4.png',
+            "VideoNewsHead": "Небесные ласточки: музыкальная двухсерийная комедия"
+          })
+          @@include('./partials/_videonews.html', {
+            "pathToVideoPrev": './img/For video/vid5.png',
+            "VideoNewsHead": "На дополнительном кастинге &#8220Хочу в ВИА Гру&#8221 девушек просили"
+          })
+          <br><br>
+          <a href="" class="more_vid">Больше видео &#8594</a>
+        </div>
+        <div class="interesting">
+          <div class="int_stat">
+            Интересные статьи
+          </div>
+          @@include('./partials/_int st.html', {
+            "pathToInteresting": './img/Int st/ist1.png',
+            "InterestingHead": "Испанский политик полностью оделась для глянца",
+            "PathToCamera": ""
+          })
+          @@include('./partials/_int st.html', {
+            "pathToInteresting": './img/Int st/ist2.png',
+            "InterestingHead": "Анджелина Джоли сильно похудела",
+            "PathToCamera": "<img src='./img/Icons/bw-photo.png'>"
+          })
+          
+          @@include('./partials/_int st.html', {
+            "pathToInteresting": './img/Int st/ist3.png',
+            "InterestingHead": "Исполнить мечту и умереть: история 14-летней девочки...",
+            "PathToCamera": ""
+          })
+          @@include('./partials/_int st.html', {
+            "pathToInteresting": './img/Int st/ist4.png',
+            "InterestingHead": "Ирина Билык сказала, что думает о повзрослевшей Алине...",
+            "PathToCamera": ""
+          })
+          @@include('./partials/_int st.html', {
+            "pathToInteresting": './img/Int st/ist5.png',
+            "InterestingHead": "7 &#8220смертных грехов&#8221: чего нельзя делать в отношениях",
+            "PathToCamera": ""
+          })
+         
+        </div>
       </section>
-      <section class="footer">
-  
+    </section>  
+    <section class="footer">
+        @@include('./partials/_header1.html', {
+          "color": "blue",
+          "HeaderName": "Обзор"
+        })
       </section>
     </section>
     
