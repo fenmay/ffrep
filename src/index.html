@@ -17,14 +17,14 @@
       <section class="left_column">
         <div class="head">
           <div class="bg_black">
-            Hot themes
+            Hot themes 
           </div>
           <div class="bg_gray">
             <div class="bg_gray_left">
-              EURO-2016 Playoffs
+              <a href="">EURO-2016 Playoffs</a> 
             </div>
             <div class="bg_gray_right">
-              El'Classico
+              <a href="">El'Classico</a> 
             </div>
           </div>
         </div>
@@ -67,13 +67,16 @@
           <div class="swiper-pagination"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-
-        @@include('./partials/_header1.html', {
-          "color": "blue",
-          "HeaderName": "Main News"
-        })
         </div>
-        <div class="mnews">
+        
+        <div>
+          <div>
+            @@include('./partials/_header1.html', {
+            "color": "blue",
+            "HeaderName": "Main News"
+            })
+          </div>
+          <div class="mnews">
           @@include('./partials/_main-news.html', {
             "pathToImage": './img/Main news/mn1.png',
             "mainNewsHead": "The FIFA Ballon d'Or is an annual association football award given by FIFA"
@@ -91,8 +94,8 @@
             "mainNewsHead": "Ribery got vase!",
             "cam": "cam"
           })
+          </div>
         </div>
-
         <div class="last_and_feed">
           <div class="news">
             <div class="last_news">
@@ -155,7 +158,7 @@
               })
               <div class="head_news">
                 <img src="./img/News feed/nf1.png" alt="news feed" class="feed_img">
-                Zlatan Ibrahimovic on target as Sweden qualify with draw in Denmark
+                <a href="">Zlatan Ibrahimovic on target as Sweden qualify with draw in Denmark</a> 
               </div>
               <ul style="clear: left" type="disc">
                 <li>@@include('./partials/_news_list.html', {
@@ -197,32 +200,34 @@
         </div>
       </section>
       <section class="right_column">
-        <div class="header2">
-          Видео
-        </div>
-        <div class="for_video">
-          @@include('./partials/_videonews.html', {
-            "pathToVideoPrev": './img/For video/vid1.png',
-            "VideoNewsHead": "Фильм дня: Гитлер Капут!"
-          })
-          @@include('./partials/_videonews.html', {
-            "pathToVideoPrev": './img/For video/vid2.png',
-            "VideoNewsHead": "Ксения Собчак беременна"
-          })
-          @@include('./partials/_videonews.html', {
-            "pathToVideoPrev": './img/For video/vid3.png',
-            "VideoNewsHead": "Группа парней избила влюбленную пару бейсбольной битой"
-          })
-          @@include('./partials/_videonews.html', {
-            "pathToVideoPrev": './img/For video/vid4.png',
-            "VideoNewsHead": "Небесные ласточки: музыкальная двухсерийная комедия"
-          })
-          @@include('./partials/_videonews.html', {
-            "pathToVideoPrev": './img/For video/vid5.png',
-            "VideoNewsHead": "На дополнительном кастинге &#8220Хочу в ВИА Гру&#8221 девушек просили"
-          })
-          <br><br>
-          <a href="" class="more_vid">Больше видео &#8594</a>
+        <div class="videos">
+          <div class="header2">
+            Видео
+          </div>
+          <div class="for_video">
+            @@include('./partials/_videonews.html', {
+              "pathToVideoPrev": './img/For video/vid1.png',
+              "VideoNewsHead": "Фильм дня: Гитлер Капут!"
+            })
+            @@include('./partials/_videonews.html', {
+              "pathToVideoPrev": './img/For video/vid2.png',
+              "VideoNewsHead": "Ксения Собчак беременна"
+            })
+            @@include('./partials/_videonews.html', {
+              "pathToVideoPrev": './img/For video/vid3.png',
+              "VideoNewsHead": "Группа парней избила влюбленную пару бейсбольной битой"
+            })
+            @@include('./partials/_videonews.html', {
+              "pathToVideoPrev": './img/For video/vid4.png',
+              "VideoNewsHead": "Небесные ласточки: музыкальная двухсерийная комедия"
+            })
+            @@include('./partials/_videonews.html', {
+              "pathToVideoPrev": './img/For video/vid5.png',
+              "VideoNewsHead": "На дополнительном кастинге &#8220Хочу в ВИА Гру&#8221 девушек просили"
+            })
+            <br><br>
+            <a href="" class="more_vid">Больше видео &#8594</a>
+          </div>
         </div>
         <div class="interesting">
           <div class="int_stat">
@@ -230,28 +235,28 @@
           </div>
           @@include('./partials/_int st.html', {
             "pathToInteresting": './img/Int st/ist1.png',
-            "InterestingHead": "Испанский политик полностью оделась для глянца",
+            "PathIntSt": "<a href=''>Испанский политик полностью оделась для глянца</a>",
             "PathToCamera": ""
           })
           @@include('./partials/_int st.html', {
             "pathToInteresting": './img/Int st/ist2.png',
-            "InterestingHead": "Анджелина Джоли сильно похудела",
+            "PathIntSt": "<a href=''>Анджелина Джоли сильно похудела</a>",
             "PathToCamera": "<img src='./img/Icons/bw-photo.png'>"
           })
           
           @@include('./partials/_int st.html', {
             "pathToInteresting": './img/Int st/ist3.png',
-            "InterestingHead": "Исполнить мечту и умереть: история 14-летней девочки...",
+            "PathIntSt": "<a href=''>Исполнить мечту и умереть: история 14-летней девочки...</a>",
             "PathToCamera": ""
           })
           @@include('./partials/_int st.html', {
             "pathToInteresting": './img/Int st/ist4.png',
-            "InterestingHead": "Ирина Билык сказала, что думает о повзрослевшей Алине...",
+            "PathIntSt": "<a href=''>Ирина Билык сказала, что думает о повзрослевшей Алине...</a>",
             "PathToCamera": ""
           })
           @@include('./partials/_int st.html', {
             "pathToInteresting": './img/Int st/ist5.png',
-            "InterestingHead": "7 &#8220смертных грехов&#8221: чего нельзя делать в отношениях",
+            "PathIntSt": "<a href=''>7 &#8220смертных грехов&#8221: чего нельзя делать в отношениях</a>",
             "PathToCamera": ""
           })
          
@@ -263,7 +268,10 @@
           "color": "blue",
           "HeaderName": "Обзор"
         })
-      </section>
+        
+       
+
+
     </section>
     
 

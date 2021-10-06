@@ -4,6 +4,7 @@
 @import './partials/photonews.scss';
 @import './partials/videonews.scss';
 @import './partials/int st.scss';
+@import './partials/swiper_two.scss';
 
 
 @font-face {
@@ -14,6 +15,16 @@
 body {
   padding: 0 15%;
   font-family: 'PT Sans';
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #3d76cc;
 }
 
 .columns {
@@ -30,6 +41,8 @@ body {
 
 .right_column {
   width: 33.33%;
+  display: inline-flex;
+  flex-direction: column;
  
 }
 
@@ -160,21 +173,7 @@ body {
 .swiper {
   width: 600px;
   height: 250px;
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  color: red;
-}
-
-.swiper-button-next {
-  position: relative;
-  top: 80%;
-  right: 10%;
-}
-
-.swiper-pagination:root {
-  color: red;
+  --swiper-theme-color: red;
 }
 
 .header2::before {
@@ -234,12 +233,14 @@ body {
   
 }
 
-a {
-  text-decoration: none;
-  color: #000000;
-}
+// .swiper_sec {
+//   width: 100%;
+//   height: 150px;
+//   --swiper-theme-color: red;
+//  }
 
-a:hover {
-  text-decoration: underline;
-  color: #3d76cc;
-}
+//  .swiper-slide_sec {
+//   background-color: rgb(233, 231, 231);
+//   margin: 3vh 0 0 0;
+  
+// }
