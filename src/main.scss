@@ -84,14 +84,6 @@ a:hover {
   width: 45%;
 }
 
-.swiper-slide {
-  background-color: rgb(233, 231, 231);
-  margin: 3vh 0 0 0;
-  display: inline-flex;
-  flex-direction: row;
-  border-bottom: red solid 4px;
-}
-
 .slider_img {
   float: left;
   height: auto;
@@ -170,11 +162,7 @@ a:hover {
   margin-top: 4vh;
 }
 
-#swiper {
-  width: 600px;
-  height: 250px;
-  --swiper-theme-color: red;
-}
+
 
 .header2::before {
   content: '';
@@ -233,14 +221,44 @@ a:hover {
   
 }
 
-// .swiper_sec {
-//   width: 100%;
-//   height: 150px;
-//   --swiper-theme-color: red;
-//  }
+#swiper {
+  width: 600px;
+  height: 250px;
+  --swiper-theme-color: red;
+  border-bottom: red solid 4px;
+}
 
-//  .swiper-slide_sec {
-//   background-color: rgb(233, 231, 231);
-//   margin: 3vh 0 0 0;
+.swiper-slide {
+  background-color: rgb(233, 231, 231);
+  margin: 3vh 0 0 0;
+  display: inline-flex;
+  flex-direction: row;
   
-// }
+}
+
+#swiper_sec {
+  width: 100%;
+  height: 150px;
+  --swiper-theme-color: red;
+  border-bottom: red solid 4px;
+ }
+
+ .swiper-slide_sec {
+  background-color: rgb(233, 231, 231);
+  margin: 0 5px;
+  display: inline-flex;
+  flex-direction: row;
+  
+ }
+
+ .button-next_sec,
+ .button-prev_sec {
+   color: red;
+   --swiper-navigation-size: 44px;
+   width: 27px;
+   height: 44px;
+ }
+
+
+
+
