@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./Fonts/PT Sans.ttf">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link rel="stylesheet" href="./main.scss">
     <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <title>News</title>
@@ -28,7 +29,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper">
+        <div id="swiper" class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="./img/Big slider/Jurgen.png" alt="slider image" class="slider_img">
@@ -269,7 +270,26 @@
           "HeaderName": "Обзор"
         })
         
-       
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+    
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
 
 
     </section>
