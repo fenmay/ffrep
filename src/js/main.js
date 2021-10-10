@@ -21,7 +21,7 @@ new Swiper('#swiper', {
 
     breakpoints: {
       320: {
-        slidesPerView: 2,
+        slidesPerView: 3,
       },
       550: {
         slidesPerView: 3,
