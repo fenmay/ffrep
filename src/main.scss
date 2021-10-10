@@ -31,7 +31,6 @@ a:hover {
 .columns {
   display: inline-flex;
   flex-direction: row;
-  
 }
 
 .left_column {
@@ -162,8 +161,6 @@ a:hover {
   margin-left: 2vw;
   margin-top: 4vh;
 }
-
-
 
 .header2::before {
   content: '';
@@ -326,4 +323,71 @@ a:hover {
   &:hover {
     background-color: #ffffffad;
   }
+}
+
+@media (min-width: 550px) and (max-width: 1200px) {
+  body {
+    padding: 0 1%;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+
+  .left_column {
+    width: 100%;
+  }
+  
+  .right_column {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #swiper {
+    width: 600px;
+    height: 350px;
+  }
+
+  .swiper-button-prev {
+    top: 320px;
+    left: 410px;
+  }
+  
+  .swiper-button-next {
+    top: 320px;
+    left: 540px;
+  }
+
+  .for_video {
+    display: inline-flex;
+    flex-direction: column;
+    
+  }
+
+  .videonews_head {
+    flex-direction: column;
+    
+  }
+
+  .video_serv {
+    display: inline-flex;
+    flex-direction: row;
+     width: 100%;
+  }
+
+  .videonews_head {
+    margin: 0 5px;
+    width: 30%;
+  }
+
+  .int_serv {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0 0.5vw;
+  }
+
+  .int_st {
+    flex-direction: column;
+  }
+
 }

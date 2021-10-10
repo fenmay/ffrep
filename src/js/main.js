@@ -3,11 +3,6 @@ new Swiper('#swiper', {
     direction: 'horizontal',
     loop: true,
   
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
@@ -28,8 +23,8 @@ new Swiper('#swiper', {
       320: {
         slidesPerView: 2,
       },
-      768: {
-        slidesPerView: 4,
+      550: {
+        slidesPerView: 3,
       }, 
       1200: {
         slidesPerView: 6,
