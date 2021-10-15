@@ -1,5 +1,52 @@
-body * {
-  outline: 1px solid lightgrey;
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat.ttf');
 }
 
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/Oswald.ttf');
+}
 
+body {
+  font-family: 'Montserrat';
+  margin: 0;
+}
+
+.first_screen {
+  background-image: url('./img/1page/bg_image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0 5%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.party {
+  font-family: 'Oswald';
+  font-size: 20px;
+  color: #6B2971;
+  margin: 0 1vw;
+  padding: 0;
+  
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.logo_text {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.logo_logo {
+  margin-top: 1vh;
+}
