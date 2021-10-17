@@ -1,3 +1,5 @@
+@import './sprites.scss';
+
 @font-face {
   font-family: 'Montserrat';
   src: url('../fonts/Montserrat.ttf');
@@ -133,20 +135,95 @@ body {
   height: 75vh;
   background-image: url('./img/1page/under_cat.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 38vw 70vh;
+  position: relative;
+  
+}
+
+.big_cat {
+  margin-left: -18vw;
+  margin-top: -10vh;
+  width: 50vw;
+  
 }
 
 .first_pagination {
   display: inline-flex;
   text-align: center;
   flex-direction: column;
-  
   color: #BA395D;
   width: 5vw;
-  border: blue solid 1px;
+  height: 100%;
+  position: absolute;
+  right: 3vw;
+  margin-top: 5vh;
+  
 }
 
 .first {
-  font-size: 5px;
+  font-size: 10px;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+}
+
+.first_act {
+  font-size: 33px;
+}
+
+.second_screen {
+  margin-top: -16vh;
+  height: 100vh;
   
+}
+
+.second_top {
+  display: flex;
+  flex-direction: row;
+}
+
+.down {
+  width: 10vw;
+  margin-top: 2vh;
+  text-align: center;
+}
+
+.descript {
+  width: 90vw;
+  height: 85vh;
+  background-image: url('./img/2page/article_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+}
+
+.head {
+  width: 72%;
+  padding-left: 5vw;
+  color: #ffffff;
+  font-family: 'Montserrat-Bold';
+  font-size: 48px;
+}
+
+.social {
+  width: 28%;
+  background-image: url('./img/2page/soc_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  padding-top: 6vh;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.soc {
+  width: 10vw;
+  height: 51px;
+  margin: 8vh 2vw;
 }
