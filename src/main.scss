@@ -1,4 +1,4 @@
-
+@import './sprites.scss';
 
 @font-face {
   font-family: 'Montserrat';
@@ -97,8 +97,8 @@ body {
   margin-left: 30px;
 }
 
-.common {
-  height: 65vh;
+.common_top {
+  height: 58vh;
   display: flex;
   flex-direction: row;
 }
@@ -106,8 +106,6 @@ body {
 .common_text {
   padding-left: 10%;
   width: 58vw;
-  height: 85vh;
-  margin-top: 5vh;
   color: #6B2971;
 
 }
@@ -122,7 +120,7 @@ body {
 .common_text_big {
   font-family: 'Montserrat-Bold';
   font-weight: 700;
-  font-size: 87px;
+  font-size: 70px;
   margin-bottom: 5vh;
 }
 
@@ -132,7 +130,7 @@ body {
 
 .common_illustr {
   width: 42vw;
-  height: 75vh;
+  height: 58vh;
   background-image: url('./img/1page/under_cat.png');
   background-repeat: no-repeat;
   background-size: 38vw 70vh;
@@ -141,10 +139,16 @@ body {
 }
 
 .big_cat {
-  margin-left: -18vw;
-  margin-top: -10vh;
-  width: 50vw;
+  margin-left: -15vw;
+  margin-top: -14vh;
+  width: 45vw;
   
+}
+
+.common_bottom {
+  display: flex;
+  flex-direction: row;
+  height: 27vh;
 }
 
 .first_pagination {
@@ -156,7 +160,7 @@ body {
   height: 100%;
   position: absolute;
   right: 3vw;
-  margin-top: 5vh;
+  
   
 }
 
@@ -170,36 +174,20 @@ body {
   font-size: 33px;
 }
 
-.second_screen {
-  margin-top: -16vh;
-  height: 100vh;
-  
-}
-
-.second_top {
-  display: flex;
-  flex-direction: row;
-}
-
 .down {
   width: 10vw;
   margin-top: 2vh;
   text-align: center;
 }
 
-.descript {
-  width: 90vw;
-  height: 85vh;
-  background-image: url('./img/2page/article_bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-}
+
 
 .header {
   display: flex;
   flex-direction: row;
-  height: 20vh;
+  
+  background-image: url('./img/2page/article_bg.png');
+  
 }
 
 .head {
@@ -207,7 +195,8 @@ body {
   padding-left: 5vw;
   color: #ffffff;
   font-family: 'Montserrat-Bold';
-  font-size: 48px;
+  font-size: 45px;
+  
 }
 
 .social {
@@ -217,13 +206,21 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: row;
-  padding-top: 6vh;
-  justify-content: space-between;
+  padding: 10vh 5vw 0 5vw;
+  justify-content: space-around;
   align-content: center;
+  
 }
 
 .soc {
-  width: 10vw;
-  height: 51px;
-  margin: 8vh 2vw;
+  z-index: 1;
 }
+
+.second_screen {
+  height: 100vh;
+  //position: relative;
+  
+}
+
+
+
