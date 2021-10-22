@@ -1,1 +1,16 @@
-//here will by JavaScript code ...
+const swiper = new Swiper('#cat_med', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  slidesPerView: 3,
+  spaceBetween: 10,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+});
