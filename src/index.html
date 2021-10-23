@@ -109,22 +109,31 @@
       </div>
       
       <div class="cat_med">
-        <!-- Slider main container -->
+        
         <div id="cat_med" class="swiper">
-          <!-- Additional required wrapper -->
+          
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide cat_med_slide">Slide 1</div>
-            <div class="swiper-slide cat_med_slide">Slide 2</div>
-            <div class="swiper-slide cat_med_slide">Slide 3</div>
+            
+            @@include('./partials/_med_slider.html', {
+              "medImg": "<img src='./img/2page/Slider/aptek.png' alt='apt' class='med_img'>",
+              "medText": "Кошачья аптечка"
+            })
+
+            @@include('./partials/_med_slider.html', {
+              "medImg": "<img src='./img/2page/Slider/vaccin.png' alt='vac'  class='med_img'>",
+              "medText": "Вакцинация кошек"
+            })
+
+            @@include('./partials/_med_slider.html', {
+              "medImg": "<img src='./img/2page/Slider/doc.png' alt='doc'  class='med_img'>",
+              "medText": "Посещение ветеринара"
+            })
     
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          
+          <div class="swiper-button-prev med_prev"></div>
+          <div class="swiper-button-next med_next"></div>
 
         </div>
       </div>

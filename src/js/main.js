@@ -4,7 +4,10 @@ const swiper = new Swiper('#cat_med', {
   loop: true,
 
   slidesPerView: 3,
-  spaceBetween: 10,
+  centeredSlides: true,
+  initialSlide: 1,
+  spaceBetween: 40,
+  slideActiveClass: 'swiper-slide-active',
 
   // Navigation arrows
   navigation: {
