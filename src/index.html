@@ -138,10 +138,96 @@
         </div>
       </div>
 
-
     </section>
 
     <section class="third_screen">
+      <div class="third_header">
+        Породы котиков
+      </div>
+      <div class="third_common">
+        <div class="third_images">
+          <div class="pop_sorts">
+            <div class="pop_item">
+              <img src="./img/3page/fixed/cat1.png" alt="cat" class="pop_cats">
+              <div class="outer_header">
+                <div class="inner_header">
+                  Манчкин
+                </div>
+              </div>
+            </div>
+            <div class="pop_item pop_accent">
+              <img src="./img/3page/fixed/cat2.png" alt="cat" class="pop_cats">
+              <div class="outer_header">
+                <div class="inner_header">
+                  Ориентал
+                </div>
+              </div>
+            </div>
+            <div class="pop_item">
+              <img src="./img/3page/fixed/cat3.png" alt="cat"  class="pop_cats">
+              <div class="outer_header">
+                <div class="inner_header">
+                  Бурма
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="other_sorts">
+
+            <!-- Slider main container -->
+            <div id="sorts" class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                
+                @@include('./partials/_sorts_slider.html', {
+                  "pathToImage": "./img/3page/Slider/sort1.png",
+                  "sortName": "Сибирская"
+                })
+
+                @@include('./partials/_sorts_slider.html', {
+                  "pathToImage": "./img/3page/Slider/sort2.png",
+                  "sortName": "Экзотическая"
+                })
+
+                @@include('./partials/_sorts_slider.html', {
+                  "pathToImage": "./img/3page/Slider/sort3.png",
+                  "sortName": "Шотландская вислоухая"
+                })
+
+                @@include('./partials/_sorts_slider.html', {
+                  "pathToImage": "./img/3page/Slider/sort4.png",
+                  "sortName": "Бенгальская"
+                })
+
+                @@include('./partials/_sorts_slider.html', {
+                  "pathToImage": "./img/3page/Slider/sort5.png",
+                  "sortName": "Мейн кун"
+                })
+    
+              </div>
+              
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev med_prev sort_prev"></div>
+              <div class="swiper-button-next med_next sort_next"></div>
+
+              
+            </div>
+
+
+          </div>
+
+        </div>
+        <div class="third_pagination">
+          <i class="fas fa-circle first"></i>
+          <i class="fas fa-circle first"></i>
+          <i class="far fa-dot-circle first first_act"></i>
+          <i class="fas fa-circle first"></i>
+        </div>
+
+      </div>
 
     </section>
 
