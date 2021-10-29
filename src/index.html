@@ -113,8 +113,7 @@
         <div id="cat_med" class="swiper">
           
           <div class="swiper-wrapper">
-            <!-- Slides -->
-            
+  
             @@include('./partials/_med_slider.html', {
               "medImg": "<img src='./img/2page/Slider/aptek.png' alt='apt' class='med_img'>",
               "medText": "Кошачья аптечка"
@@ -174,13 +173,10 @@
             
           </div>
           <div class="other_sorts">
-
-            <!-- Slider main container -->
             <div id="sorts" class="swiper">
-              <!-- Additional required wrapper -->
+ 
               <div class="swiper-wrapper">
-                <!-- Slides -->
-                
+                 
                 @@include('./partials/_sorts_slider.html', {
                   "pathToImage": "./img/3page/Slider/sort1.png",
                   "sortName": "Сибирская"
@@ -210,8 +206,8 @@
               
 
               <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev med_prev sort_prev"></div>
-              <div class="swiper-button-next med_next sort_next"></div>
+              <div class="swiper-button-prev med_prev"></div>
+              <div class="swiper-button-next med_next"></div>
 
               
             </div>
@@ -232,8 +228,131 @@
     </section>
 
     <section class="fourth_screen">
+      <div class="new_home_header">
+        <div class="outer_header">
+          <div class="inner_header">
+            Пристройка котиков
+          </div>
+        </div>
+      </div>
+      <div  class="new_home">
+        <!-- Slider main container -->
+        <div id="new_home" class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            @@include('./partials/_new_home_slider.html', {
+              "pathToPhoto": "./img/4page/Slider/nh1.png",
+              "catName": "Олежа"
+            })
 
-    </section>
+            @@include('./partials/_new_home_slider.html', {
+              "pathToPhoto": "./img/4page/Slider/nh2.png",
+              "catName": "Минхоша"
+            })
+
+            @@include('./partials/_new_home_slider.html', {
+              "pathToPhoto": "./img/4page/Slider/nh3.png",
+              "catName": "Бинни"
+            })
+
+          </div>
+ 
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev med_prev"></div>
+          <div class="swiper-button-next med_next"></div>
+
+        </div>
+      </div>
+      
+      <div class="fourth_common">
+        <div class="fourth_left">
+          <div class="third_header">
+            Свяжитесь с нами, чтобы взять котика или передать на передержку
+          </div>
+  
+              <form action="" class="form">
+                <div class="form_first_line" >
+                  <textarea name="name" id="" cols="30" rows="1" class="fir_field">Ваше имя</textarea>
+                  <textarea name="tel" id="" cols="30" rows="1"  class="fir_field">Номер телефона</textarea>
+                  <button class="button">Отправить</button>
+                </div>
+                <div class="form_second_line"> 
+                  <textarea name="comment" id="" cols="30" rows="3" class="sec_field">Комментарий...</textarea>
+                </div>
+               
+              </form>
+        </div>  
+        
+        <div class="third_pagination">
+              <i class="fas fa-circle first"></i>
+              <i class="fas fa-circle first"></i>
+              <i class="fas fa-circle first"></i>
+              <i class="far fa-dot-circle first first_act"></i>
+            </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="cat_stat">
+      <div class="count">
+        <img src="./img/4page/stat.png" alt="stat">
+        <div class="number">
+          7
+        </div>
+        <div class="text_reg">
+          котиков
+        </div>
+        <div class="text_bold"> 
+          за неделю
+        </div>
+      </div>
+
+      <div class="count">
+        <img src="./img/4page/stat.png" alt="stat">
+        <div class="number">
+          23
+        </div>
+        <div class="text_reg">
+          котика
+        </div>
+        <div class="text_bold"> 
+          за месяц
+        </div>
+      </div>
+
+      <div class="count">
+        <img src="./img/4page/stat.png" alt="stat">
+        <div class="number">
+          374
+        </div>
+        <div class="text_reg">
+          котика
+        </div>
+        <div class="text_bold"> 
+          за год
+        </div>
+      </div>
+      
+
+    </div>
+    <div class="reports">
+      <div class="up">
+        <img src="./img/4page/up.png" alt="up">
+      </div>
+      <div class="rep">
+        <div class="outer_header">
+          <div class="inner_header">
+            Отчеты
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
 
 
   </body>

@@ -2,8 +2,9 @@
     width: 12vw;
     height: 35vh;
     margin-top: 4vh;
-    //margin: 0 10vw;
-   // border: firebrick solid 1px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
 
 }
 
@@ -16,7 +17,3 @@
     transform: scale(1.2); // увеличение на 20%
     transition: transform .2s ease;
 }
-// .swiper-slide .cont_sorts {
-//     transform: scale(0.8); // уменьшить неактивный слайд
-//     // transition: transform .2s ease;
-// }
