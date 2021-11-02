@@ -21,6 +21,19 @@
 body {
   font-family: 'Montserrat';
   margin: 0;
+  }
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .first_screen {
@@ -73,11 +86,17 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   color: #6B2971;
   font-size: 24px;
+  font-family: 'Montserrat-Bold';
   font-weight: bold;
   width: 60%;
-  
+  z-index: 1;
+}
+
+.hidden_navig {
+  z-index: 1;
 }
 
 .service {
@@ -91,6 +110,7 @@ body {
   color: #ffffff;
   font-size: 24px;
   font-weight: bold;
+  font-family: 'Montserrat-Bold';
 }
 
 .service::after {
@@ -142,7 +162,7 @@ body {
   margin-left: -15vw;
   margin-top: -14vh;
   width: 45vw;
-  
+  position: absolute;
 }
 
 .common_bottom {
@@ -160,8 +180,6 @@ body {
   height: 100%;
   position: absolute;
   right: 3vw;
-  
-  
 }
 
 .first {
@@ -363,8 +381,8 @@ body {
 .outer_header {
   background-color: #FFF78C;
   border-radius: 3vh;
-  height: 7vh;
   width: 60%;
+  padding: 3px;
   position: relative;
   bottom: 55px;
   left: 50%;
@@ -376,9 +394,8 @@ body {
 }
 
 .inner_header {
-  height: 5vh;
   width: 90%;
-  padding-top: 5px;
+  padding: 4px;
   background-color: #FFF78C;
   border-radius: 2vh;
   color: #BA395D;
@@ -401,11 +418,6 @@ body {
   position: relative;
   //border: mediumvioletred solid 1px;
 }
-
-.med_prev.sort_prev {
-  width: 15px;
-}
-
 
 .third_pagination {
   display: inline-flex;
@@ -431,15 +443,16 @@ body {
 
 .new_home_header .outer_header {
   margin-top: 10vh;
+  
   width: 90%;
-  height: 10vh;
+  //height: 10vh;
   border-radius: 5vh;
 }
 
 .new_home_header .inner_header {
   height: 82%;
   width: 97%;
-  padding-top: 2px;
+  padding: 5px;
   border-radius: 4vh;
   font-size: 35px;
   font-family: 'Montserrat-Bold';
@@ -591,5 +604,49 @@ textarea {
 
 .rep {
   width: 80vw;
- // border: indigo solid 1px;
+ 
+}
+
+.faq_for_hidden:hover .faq_hidden {
+  display: block;
+}
+
+.event_for_hidden:hover .event_hidden {
+  display: block;
+}
+
+.hidden_navig:hover .serv_nav {
+  display: block;
+}
+
+.faq_hidden, .event_hidden {
+
+  display: none;
+  position: absolute;
+  top: 10vh;
+  //left: ;
+  padding: 1%;
+  font-size: 20px;
+  color: #6B2971;
+  background-color: #FFFFFF;
+ // border: #6B2971 solid 2px;
+  width: 10vw;
+}
+
+.serv_nav {
+  display: none;
+  position: absolute;
+  top: 10vh;
+  //left: ;
+  padding: 1%;
+  font-size: 20px;
+  color: #BA395D;
+  background-color: #FFFFFF;
+ // border: #6B2971 solid 2px;
+  width: 12vw;
+}
+
+.hid_text {
+  padding: 10% 5%;
+  border-bottom: #6B2971 solid 2px;
 }

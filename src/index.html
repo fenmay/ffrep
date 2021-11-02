@@ -17,9 +17,9 @@
   <body>
     <section class="first_screen">
       <div class="menu">
-        <div class="logo">
+        <div class="logo"  id="top">
           <div class="logo_img">
-            <img src="./img/menu/logo.png" alt="logo" class="logo_logo">
+            <a href=""><img src="./img/menu/logo.png" alt="logo" class="logo_logo"></a> 
           </div>
           <div class="logo_text">
             <div class="party">
@@ -31,19 +31,38 @@
           </div>
         </div>
         <div class="navig">
-          <div>Справочник</div>
+          <div class="faq_for_hidden">
+            <a href="">Справочник</a>
+            <div class="faq_hidden">
+              <div class="hid_text"><a href="">Полезные знания</a></div>
+              <div class="hid_text"><a href="">Форум знатоков</a></div>
+              <div class="hid_text"><a href="">О выборе породы</a></div>
+            </div>
+          </div>
           <i class="fas fa-circle"></i>
-          <div>Мероприятия</div>
+          <div class="event_for_hidden">
+            <a href="">Мероприятия</a>
+            <div class="event_hidden">
+              <div class="hid_text"><a href="">Осенняя выставка</a></div>
+              <div class="hid_text"><a href="">Прогулки</a></div>
+              
+            </div>
+          </div>
           <i class="fas fa-circle"></i>
-          <div>Развлечения</div>
+          <div class="ent_for_hidden"><a href="">Развлечения</a></div>
           <i class="fas fa-circle"></i>
-          <div>Уход</div>
+          <div class="care_for_hidden"><a href="">Уход</a></div>
           <i class="fas fa-circle"></i>
-          <div>О нас</div>
+          <div class="about_for_hidden"><a href="">О нас</a></div>
         </div>
         <div class="hidden_navig">
           <div class="service">
-            Услуги
+            <a href="">Услуги</a>
+            <div class="serv_nav">
+              <div class="hid_text"><a href="">Передержка котиков</a></div>
+              <div class="hid_text"><a href="">Ветеринария</a></div>
+              <div class="hid_text"><a href="">Получить консультацию</a></div>
+            </div>
           </div>
         </div>
       </div>
@@ -63,16 +82,17 @@
           <div class="common_illustr">
             <img src="./img/1page/big_cat.png" alt="cat" class="big_cat">
             <div class="first_pagination">
-              <i class="far fa-dot-circle first first_act"></i>
-              <i class="fas fa-circle first"></i>
-              <i class="fas fa-circle first"></i>
-              <i class="fas fa-circle first"></i>
+              <a href="#top"><i class="far fa-dot-circle first first_act"></i></a>
+              <a href="#sec_scr"><i class="fas fa-circle first"></i></a>
+              <a href="#thir_scr"><i class="fas fa-circle first"></i></a>
+              <a href="#fr_scr"><i class="fas fa-circle first"></i></a>
+             
             </div>
           </div>
         </div>
         <div class="common_bottom">
           <div class="down">
-            <img src="./img/1page/down.png" alt="down">
+            <a href="#bottom"><img src="./img/1page/down.png" alt="down"></a> 
           </div>
           <div class="header">
             <div class="head">
@@ -87,7 +107,7 @@
         </div>
     </section>
               
-    <section class="second_screen">
+    <section class="second_screen" id="sec_scr">
       <div class="descript">
         <div class="for_artcl">
           <div class="article">
@@ -101,10 +121,10 @@
         </div>
         
         <div class="second_pagination">
-          <i class="fas fa-circle first"></i>
-          <i class="far fa-dot-circle first first_act"></i>
-          <i class="fas fa-circle first"></i>
-          <i class="fas fa-circle first"></i>
+          <a href="#top"><i class="fas fa-circle first"></i></a>
+          <a href="#sec_scr"><i class="far fa-dot-circle first first_act"></i></a>
+          <a href="#thir_scr"><i class="fas fa-circle first"></i></a>
+          <a href="#fr_scr"><i class="fas fa-circle first"></i></a>
         </div>
       </div>
       
@@ -116,17 +136,20 @@
   
             @@include('./partials/_med_slider.html', {
               "medImg": "<img src='./img/2page/Slider/aptek.png' alt='apt' class='med_img'>",
-              "medText": "Кошачья аптечка"
+              "medText": "Кошачья аптечка",
+              "pathToPage": "address"
             })
 
             @@include('./partials/_med_slider.html', {
               "medImg": "<img src='./img/2page/Slider/vaccin.png' alt='vac'  class='med_img'>",
-              "medText": "Вакцинация кошек"
+              "medText": "Вакцинация кошек",
+              "pathToPage": "address"
             })
 
             @@include('./partials/_med_slider.html', {
               "medImg": "<img src='./img/2page/Slider/doc.png' alt='doc'  class='med_img'>",
-              "medText": "Посещение ветеринара"
+              "medText": "Посещение ветеринара",
+              "pathToPage": "address"
             })
     
           </div>
@@ -139,7 +162,7 @@
 
     </section>
 
-    <section class="third_screen">
+    <section class="third_screen" id="thir_scr">
       <div class="third_header">
         Породы котиков
       </div>
@@ -150,7 +173,7 @@
               <img src="./img/3page/fixed/cat1.png" alt="cat" class="pop_cats">
               <div class="outer_header">
                 <div class="inner_header">
-                  Манчкин
+                  <a href="">Манчкин</a> 
                 </div>
               </div>
             </div>
@@ -158,7 +181,7 @@
               <img src="./img/3page/fixed/cat2.png" alt="cat" class="pop_cats">
               <div class="outer_header">
                 <div class="inner_header">
-                  Ориентал
+                  <a href="">Ориентал</a> 
                 </div>
               </div>
             </div>
@@ -166,7 +189,7 @@
               <img src="./img/3page/fixed/cat3.png" alt="cat"  class="pop_cats">
               <div class="outer_header">
                 <div class="inner_header">
-                  Бурма
+                  <a href="">Бурма</a> 
                 </div>
               </div>
             </div>
@@ -179,27 +202,32 @@
                  
                 @@include('./partials/_sorts_slider.html', {
                   "pathToImage": "./img/3page/Slider/sort1.png",
-                  "sortName": "Сибирская"
+                  "sortName": "Сибирская",
+                  "pathToDescription": "address"
                 })
 
                 @@include('./partials/_sorts_slider.html', {
                   "pathToImage": "./img/3page/Slider/sort2.png",
-                  "sortName": "Экзотическая"
+                  "sortName": "Экзотическая",
+                  "pathToDescription": "address"
                 })
 
                 @@include('./partials/_sorts_slider.html', {
                   "pathToImage": "./img/3page/Slider/sort3.png",
-                  "sortName": "Шотландская вислоухая"
+                  "sortName": "Шотландская вислоухая",
+                  "pathToDescription": "address"
                 })
 
                 @@include('./partials/_sorts_slider.html', {
                   "pathToImage": "./img/3page/Slider/sort4.png",
-                  "sortName": "Бенгальская"
+                  "sortName": "Бенгальская",
+                  "pathToDescription": "address"
                 })
 
                 @@include('./partials/_sorts_slider.html', {
                   "pathToImage": "./img/3page/Slider/sort5.png",
-                  "sortName": "Мейн кун"
+                  "sortName": "Мейн кун",
+                  "pathToDescription": "address"
                 })
     
               </div>
@@ -217,18 +245,19 @@
 
         </div>
         <div class="third_pagination">
-          <i class="fas fa-circle first"></i>
-          <i class="fas fa-circle first"></i>
-          <i class="far fa-dot-circle first first_act"></i>
-          <i class="fas fa-circle first"></i>
+          <a href="#top"><i class="fas fa-circle first"></i></a>
+          <a href="#sec_scr"> <i class="fas fa-circle first"></i></a>
+          <a href="#thir_scr"><i class="far fa-dot-circle first first_act"></i></a>
+          <a href="#fr_scr"> <i class="fas fa-circle first"></i></a>
+         
         </div>
 
       </div>
 
     </section>
 
-    <section class="fourth_screen">
-      <div class="new_home_header">
+    <section class="fourth_screen" >
+      <div class="new_home_header" id="fr_scr">
         <div class="outer_header">
           <div class="inner_header">
             Пристройка котиков
@@ -236,24 +265,25 @@
         </div>
       </div>
       <div  class="new_home">
-        <!-- Slider main container -->
         <div id="new_home" class="swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
+           
             @@include('./partials/_new_home_slider.html', {
               "pathToPhoto": "./img/4page/Slider/nh1.png",
-              "catName": "Олежа"
+              "catName": "Олежа",
+              "pathToPet": "address"
             })
 
             @@include('./partials/_new_home_slider.html', {
               "pathToPhoto": "./img/4page/Slider/nh2.png",
-              "catName": "Минхоша"
+              "catName": "Минхоша",
+              "pathToPet": "address"
             })
 
             @@include('./partials/_new_home_slider.html', {
               "pathToPhoto": "./img/4page/Slider/nh3.png",
-              "catName": "Бинни"
+              "catName": "Бинни",
+              "pathToPet": "address"
             })
 
           </div>
@@ -285,11 +315,11 @@
         </div>  
         
         <div class="third_pagination">
-              <i class="fas fa-circle first"></i>
-              <i class="fas fa-circle first"></i>
-              <i class="fas fa-circle first"></i>
-              <i class="far fa-dot-circle first first_act"></i>
-            </div>
+          <a href="#top"><i class="fas fa-circle first"></i></a>
+          <a href="#sec_scr"><i class="fas fa-circle first"></i></a>
+          <a href="#thir_scr"><i class="fas fa-circle first"></i></a>
+          <a href="#fr_scr"><i class="far fa-dot-circle first first_act"></i></a>
+        </div>
 
       </div>
     </div>
@@ -340,12 +370,12 @@
     </div>
     <div class="reports">
       <div class="up">
-        <img src="./img/4page/up.png" alt="up">
+        <a href="#top"><img src="./img/4page/up.png" alt="up" id="bottom"></a> 
       </div>
       <div class="rep">
         <div class="outer_header">
           <div class="inner_header">
-            Отчеты
+            <a href="">Отчеты</a>
           </div>
         </div>
       </div>
