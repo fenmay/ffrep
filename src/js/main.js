@@ -9,6 +9,19 @@ const swiper = new Swiper('#cat_med', {
   spaceBetween: 40,
   slideActiveClass: 'swiper-slide-active',
 
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+      centeredSlides: false,
+    }, 
+    1024: {
+      slidesPerView: 3,
+    }
+  },
+
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
@@ -29,6 +42,17 @@ const swiper2 = new Swiper('#sorts', {
   initialSlide: 2,
   spaceBetween: 40,
   slideActiveClass: 'swiper-slide-active',
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 3,
+    }, 
+    1024: {
+      slidesPerView: 5,
+    }
+  },
 
   // Navigation arrows
   navigation: {
@@ -48,6 +72,20 @@ const swiper3 = new Swiper('#new_home', {
   spaceBetween: 40,
   centeredSlides: true,
   initialSlide: 1,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      
+    },
+    768: {
+      slidesPerView: 2,
+      centeredSlides: false,
+    }, 
+    1024: {
+      slidesPerView: 3,
+    }
+  },
   
 
   // Navigation arrows
