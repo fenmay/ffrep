@@ -1,0 +1,19 @@
+.cont_sorts {
+    width: 12vw;
+    height: 35vh;
+    margin-top: 4vh;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
+
+}
+
+.sort_image {
+    border-radius: 3vh;
+    width: 100%;
+}
+
+.swiper-slide-active .cont_sorts {
+    transform: scale(1.2); // увеличение на 20%
+    transition: transform .2s ease;
+}
