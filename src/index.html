@@ -4,156 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./main.scss">
-    <link rel="stylesheet" href="./fonts/Bebas.ttf">
-    <link rel="stylesheet" href="./fonts/StMarie.otf">
-    <title>Rabbit</title>
+    <link   rel="stylesheet"   href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/deee292044.js" crossorigin="anonymous"></script>
+    <title>Forsiden - Aftenposten</title>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <section>
-      <div class="logo_big">
-        <div><img src="./img/rabbit-logo.png" alt="logo" class="img_logo"></div>
-      </div>
-      <div class="menu_big">
-        <div class="menu">
-          <div class="bg-home_icon"></div>
-          <div class="menu-text">home</div>  
-        </div>
-        <div class="menu menu_with_fir_hidden">
-          <div class="bg-about_icon">
-            <div class="hidden_menu">
-              <div class="hid_text">About site</div>
-              <div class="hid_text">About company</div>
-              <div class="hid2 hid_text">About Hoof
-                <div class="text_hid2">
-                  <div class="sec_hid_text">About H</div>
-                  <div class="sec_hid_text">About O</div>
-                  <div class="sec_hid_text">About O</div>
-                  <div class="sec_hid_text">About F</div>
-                </div>
-              </div>
-              <div class="hid_text">About Nibs</div>
-              <div class="hid_text">About Squwark</div>
-            </div>
-          </div>
-          <div class="menu-text">about</div>
-        </div>
-        <div class="menu">
-          <div class="bg-work_icon"></div>
-          <div class="menu-text">work</div>
-        </div>
-        <div class="menu">
-          <div class="bg-blog_icon"></div>
-          <div class="menu-text">blog</div>
-        </div>
-        <div class="menu">
-          <div class="bg-contact_icon"></div>
-          <div class="menu-text">contact</div>
+    <section class="for_menu">
+      <div class="menu_left">
+        <a href=""><img src="./img/logo.png" alt="aftenposten" class="logo_img"></a>
+        <div class="menu_categor">
+          <div class="category with_line"> <a href="">A&#x2212magasinet</a> </div>
+          <div class="category  with_line"> <a href="">Oslo</a> </div>
+          <div class="category  with_line"> <a href="">Sport</a> </div>
+          <div class="category  with_line"> <a href="">Meninger</a> </div>
         </div>
       </div>
-      <div class="clearfix"></div>
-    </section>
-    <section class="big_orange">
-      <div class="questions">
-        <div class="qe1">Do you like rabbits?</div>
-        <div class="qe2">Do you like oranges?</div>
-      </div>  
-    </section>
-    <section class="top_columns">
-      <div class="text_columns accordion">
-        <input id="acc1" type="checkbox" class="acc_input">
-        <div class="acc_content">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nesciunt quibusdam dolorum voluptates alias recusandae accusantium ratione odit doloremque vero! Id pariatur explicabo doloremque quo consectetur non maxime beatae enim. Obcaecati consequatur harum nemo architecto temporibus repudiandae repellendus quisquam excepturi autem voluptate sapiente accusamus mollitia doloremque numquam tempora facere praesentium corporis ab facilis delectus, rerum molestias qui quasi fugiat. Reiciendis. 
+      <div class="menu_right menu_categor">
+        <div class="timer m_right  with_line"> <a href="">72-timmersalg</a> </div>
+        <div class="m_right"> | </div>
+        <div class="meny m_right"> <a href="">Meny</a> </div>
+        <div class="m_right">
+          <div class="burger"></div>
+          <div class="burger"></div>
+          <div class="burger"></div>
         </div>
-        <label for="acc1" class="acc_opener read_more">
-          read more/less
-        </label>
-      </div>
-      <div class="text_columns accordion">
-        <input id="acc2" type="checkbox" class="acc_input">
-        <div class="acc_content">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nesciunt quibusdam dolorum voluptates alias recusandae accusantium ratione odit doloremque vero! Id pariatur explicabo doloremque quo consectetur non maxime beatae enim. Obcaecati consequatur harum nemo architecto temporibus repudiandae repellendus quisquam excepturi autem voluptate sapiente accusamus mollitia doloremque numquam tempora facere praesentium corporis ab facilis delectus, rerum molestias qui quasi fugiat. Reiciendis. 
-        </div>
-        <label for="acc2" class="acc_opener read_more">
-          read more/less
-        </label>
-      </div>
-      <div class="text_columns accordion">
-        <input id="acc3" type="checkbox" class="acc_input">
-        <div class="acc_content">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nesciunt quibusdam dolorum voluptates alias recusandae accusantium ratione odit doloremque vero! Id pariatur explicabo doloremque quo consectetur non maxime beatae enim. Obcaecati consequatur harum nemo architecto temporibus repudiandae repellendus quisquam excepturi autem voluptate sapiente accusamus mollitia doloremque numquam tempora facere praesentium corporis ab facilis delectus, rerum molestias qui quasi fugiat. Reiciendis. 
-        </div>
-        <label for="acc3" class="acc_opener read_more">
-          read more/less
-        </label>
-      </div>
-      <div class="text_columns accordion">
-        <input id="acc4" type="checkbox" class="acc_input">
-        <div class="acc_content">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nesciunt quibusdam dolorum voluptates alias recusandae accusantium ratione odit doloremque vero! Id pariatur explicabo doloremque quo consectetur non maxime beatae enim. Obcaecati consequatur harum nemo architecto temporibus repudiandae repellendus quisquam excepturi autem voluptate sapiente accusamus mollitia doloremque numquam tempora facere praesentium corporis ab facilis delectus, rerum molestias qui quasi fugiat. Reiciendis. 
-        </div>
-        <label for="acc4" class="acc_opener read_more">
-          read more/less
-        </label>
       </div>
     </section>
-    <section>
-      <header class="header">
-        Meet the team
-      </header>
-      <div class="team">
-        <div class="name_job">
-          <div class="team_name">Hoof</div>
-          <div class="team_job"> - Lead Designer</div>
-        </div>
-        <img src="./img/hoof.png" alt="Hoof" class="team_avatar">
-        <div class="team_descript">Hoof is our most talented designer. However he's not the talkative type and I would advise not getting on the wrong side of him.</div>
+
+    <section class="attention">
+      <div class="att_text">
+        Akkurat nå er det tilbud på Aftenposten!
       </div>
-      <div class="team">
-        <div class="name_job">
-          <div class="team_name">Nibs</div>
-          <div class="team_job" class="orange_text"> - CEO/Director</div>
-        </div>
-        <img src="./img/nibs.png" alt="Nibs" class="team_avatar">
-        <div class="team_descript">Nibs is our go to woman. She's a ceo/director of orange rabbit and runs fast when she has too.</div>
-      </div>
-      <div class="team">
-        <div class="name_job">
-          <div class="team_name">Squwark</div>
-          <div class="team_job"> - Developer</div>
-        </div>
-        <img src="./img/squwark.png" alt="Squwark" class="team_avatar">
-        <div class="team_descript">Squwark is no social bunny. But when it comes to programming he stands out from the crowd.</div>
+      <div class="att_button">
+        72-timerssalg
       </div>
     </section>
-    <section>
-      <header class="header">
-        Send us a message...
-      </header>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+    
+      </div>
+  
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next new_button"></div>
+
       
-        <form action="" class="form">
-          <label class="form_names">
-            Name
-            <input type="text" class="field">
-          </label>
-          <label class="form_names">
-            Email
-            <input type="text" class="field">
-          </label>
-          <label class="form_names">
-            Massage
-            <textarea name="message" rows="2" class="field"></textarea>
-          </label>
-                   
-          <button class="submit">
-            Submit
-          </button>
-        </form>
-      </div>
-    </section>
-    <div class="footer">
-      COPIRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT.
     </div>
+
+
+
 
   </body>
 </html>
