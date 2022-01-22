@@ -1,0 +1,41 @@
+.slide {
+   border-right: lightgray 1px solid;
+   display: flex;
+   flex-direction: column;
+   padding: 20px 20px;
+   font-family: 'Arial';
+   height: 90%;
+}
+
+.slide_head {
+    
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.slide_head:active {
+    color: blue;
+}
+
+.slide_descr {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.slide_time {
+    color: blue;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.slide_dot {
+    font-size: 3px;
+    padding: 6px 0;
+    margin-right: 5px;
+}
+
+.slide_author {
+    font-size: 12px;
+    margin-right: 5px;
+}

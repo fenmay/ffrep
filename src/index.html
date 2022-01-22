@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="menu_right menu_categor">
-        <div class="timer m_right  with_line"> <a href="">72-timmersalg</a> </div>
+        <div class="timer m_right  with_line"> <a href="">72-timerssalg</a> </div>
         <div class="m_right"> | </div>
         <div class="meny m_right"> <a href="">Meny</a> </div>
         <div class="m_right">
@@ -43,30 +43,153 @@
       </div>
     </section>
 
-    <!-- Slider main container -->
     <div class="swiper">
-      <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">
+          @@include('./partials/_for_slider.html', {
+              "head": "Taliban-delegasjonen har landet på Gardermoen",
+              "time": "19:33",
+              "topic": "Nyhetsstudio",
+              "pathToNews": "https://google.com",
+          })
+        </div>
+        <div class="swiper-slide">
+          @@include('./partials/_for_slider.html', {
+              "head": "USA sender 90 tonn militært utstyr til Ukraina",
+              "time": "19:08",
+              "topic": "Nyhetsstudio",
+              "pathToNews": "https://google.com",
+          })
+        </div>
+        <div class="swiper-slide">
+          @@include('./partials/_for_slider.html', {
+              "head": "Nato-styrker overvåker bulgarsk luftrom",
+              "time": "18:47",
+              "topic": "Nyhetsstudio",
+              "pathToNews": "https://google.com",
+          })
+        </div>
+        <div class="swiper-slide">
+          @@include('./partials/_for_slider.html', {
+              "head": "CNN: USAs ambassade i Kiev forbereder evakuerin",
+              "time": "17:09",
+              "topic": "Nyhetsstudio",
+              "pathToNews": "https://google.com",
+          })
+        </div>
+        <div class="swiper-slide">
+          @@include('./partials/_for_slider.html', {
+              "head": "Svært vanskelige kjøreforhold i Nord-Norge fra søndag",
+              "time": "16:49",
+              "topic": "Nyhetsstudio",
+              "pathToNews": "https://google.com",
+          })
+        </div>
+        <div class="swiper-slide">
+          @@include('./partials/_for_slider.html', {
+              "head": "USA til norske Taliban-samtaler med klar agenda",
+              "time": "16:49",
+              "topic": "Nyhetsstudio",
+              "pathToNews": "https://google.com",
+          })
+        </div>
+        <div class="swiper-slide">
+          @@include('./partials/_for_slider.html', {
+              "head": "Oslo Høyre sier ja til vaksinepass",
+              "time": "15:53",
+              "topic": "Nyhetsstudio",
+              "pathToNews": "https://google.com",
+          })
+        </div>
+        <div class="swiper-slide">
+          @@include('./partials/_for_slider.html', {
+              "head": "Nær 90 drept i kamper mellom IS og kurdere i Syria",
+              "time": "15:25",
+              "topic": "Nyhetsstudio",
+              "pathToNews": "https://google.com",
+          })
+        </div>
+        <div class="swiper-slide">
+          @@include('./partials/_for_slider.html', {
+              "head": "224 koronasmittede pasienter innlagt på sykehus",
+              "time": "15:24",
+              "topic": "Koronaviruset",
+              "pathToNews": "https://google.com",
+          })
+        </div>
     
       </div>
   
-      <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
-      <div class="swiper-button-next new_button"></div>
-
-      
+      <div class="swiper-button-next new_button"></div>  
     </div>
 
+
+    <section class="news_block">
+      @@include('./partials/_news.html', {
+        "PathToMainEvent": "https://google.com",
+        "PathToMainImage": "./img/taliban.jpg ",
+        "Mainheader": "Taliban har landet i Norge",
+        "Mainauthor": "VERDEN",
+        "Mainwhen": "/ 7 MINUTTER SIDEN",
+
+        "PathToEventOne": "https://google.com",
+        "PathToImageOne": "./img/politiet.jpg",
+        "headerOne": "Politiet roper varsku om kriminelle aktører i hyttebransjen: – Bare sett toppen av isfjellet",
+        "authorOne": "NORGE",
+        "whenOne": "/ 7 MINUTTER SIDEN",
+
+        "PathToEventTwo": "https://google.com",
+        "PathToImageTwo": "./img/Smitterekorden.jpg",
+        "headerTwo": "Smitterekorden ble smadret. Her er forklaringen.",
+        "authorTwo": "NORGE",
+        "whenTwo": "/ 5 MINUTTER SIDEN",
+    })
+
+
+    @@include('./partials/_news.html', {
+      "PathToMainEvent": "https://www.aftenposten.no/amagasinet/i/k6bdeQ/christine-koht-jeg-er-paa-en-stram-nyhetsdiett-dette-er-grunnen",
+      "PathToMainImage": "./img/det.jpg ",
+      "Mainheader": "Det er minst like hardt å holde seg unna nyheter som sukker og hvetemel",
+      "Mainauthor": "A-MAGASINET",
+      "Mainwhen": "/ FOR ABONNENTER",
+
+      "PathToEventOne": "https://www.aftenposten.no/norge/i/rE3VEl/gammel-videosvindel-er-tilbake-slik-proever-de-aa-svindle-deg-via-mobil",
+      "PathToImageOne": "./img/Svindelforsøk.jpg",
+      "headerOne": "Svindelforsøk på mobilen. Ikke last ned denne appen",
+      "authorOne": "NORGE",
+      "whenOne": " ",
+
+      "PathToEventTwo": "https://www.aftenposten.no/verden/i/66ddaW/angrep-paa-fengsel-i-syria-naer-90-drept-i-kamper-mellom-is-og-kurdere",
+      "PathToImageTwo": "./img/Nær.jpg",
+      "headerTwo": "Nær 90 drept i kamper mellom IS og kurdere i Syria",
+      "authorTwo": "VERDEN",
+      "whenTwo": "ÉN TIME SIDEN",
+  })
+
+
+
+  @@include('./partials/_news.html', {
+    "PathToMainEvent": "https://google.com",
+    "PathToMainImage": "./img/taliban.jpg ",
+    "Mainheader": "Taliban har landet i Norge",
+    "Mainauthor": "VERDEN",
+    "Mainwhen": "/ 7 MINUTTER SIDEN",
+
+    "PathToEventOne": "https://google.com",
+    "PathToImageOne": "./img/politiet.jpg",
+    "headerOne": "Politiet roper varsku om kriminelle aktører i hyttebransjen: – Bare sett toppen av isfjellet",
+    "authorOne": "NORGE",
+    "whenOne": "/ 7 MINUTTER SIDEN",
+
+    "PathToEventTwo": "https://google.com",
+    "PathToImageTwo": "./img/Smitterekorden.jpg",
+    "headerTwo": "Smitterekorden ble smadret. Her er forklaringen.",
+    "authorTwo": "NORGE",
+    "whenTwo": "/ 5 MINUTTER SIDEN",
+})
+
+    </section>
 
 
 

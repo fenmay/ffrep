@@ -1,5 +1,8 @@
+@import './partials/for_slider.scss';
+@import './partials/news.scss';
+
 html {
-  margin: 80px 12% 0 12%;
+  margin: 80px 14% 0 12%;
 }
 
 a {
@@ -11,13 +14,15 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 -13%;
+  margin: -88px -13% 0 -13%;
   padding: 0 12%;
   position: fixed;
-  margin-top: -80px;
-  border-bottom: rgb(94, 93, 93) 1px solid;
+  //margin-top: -100px;
+  border-bottom: lightgray 1px solid;
+  background-color: #FFFFFF;
   height: 70px;
   width: 77vw;
+  z-index: 100;
 }
 
 .logo_img {
@@ -73,6 +78,7 @@ a {
   flex-direction: row;
   justify-content: space-around;
   position: relative;
+  width: 105%;
   height: 40px;
   padding-top: 20px;
   padding-bottom: 0;
@@ -101,15 +107,17 @@ a {
 }
 
 .swiper {
-  border: red 1px solid;
+  border-bottom: lightgray 2px solid;
   margin-top: 10px;
-  width: 100%;
+  width: 105%;
   height: 100px;
+  display: flex;
+  align-content: center;
 }
 
 .swiper-button-next.new_button::after {
   font-family: 'Font Awesome 5 Free';
   content: "\f35a";
   font-size: 30px;
-
+  
 }
