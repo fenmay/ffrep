@@ -109,7 +109,7 @@ a {
   border-bottom: lightgray 2px solid;
   margin-top: 10px;
   width: 105%;
-  height: 100px;
+  height: fit-content;
   display: flex;
   align-content: center;
 }
@@ -130,9 +130,9 @@ footer {
   display: flex;
   flex-direction: column;
   margin: 40px 0 0 -19%;
-  padding: 70px 15% 0 19%;
+  padding: 70px 15% 0 25%;
   height: 470px;
-  width: 75.5vw;
+  width: 71vw;
     
 }
 
@@ -146,8 +146,8 @@ footer {
 }
 
 .foot_left {
-  width: 250px;
-  margin-right: 100px;
+  width: 280px;
+  margin-right: 50px;
 }
 
 .foot_right {
@@ -173,7 +173,7 @@ footer {
   color: #FFFFFF;
   font-family: 'Arial';
   font-size: 17px;
-  width: 650px;
+  width: 90%;
   margin-top: 20px;
 }
 
@@ -196,12 +196,39 @@ footer {
 .foot_white {
   background-color: #FFFFFF;
   height: 70px;
-  width: 76.3%;
+  width: 84.3%;
   display: flex;
   flex-direction: row;
-  margin: 0 0 0 -17%;
+  margin: 0 0 0 -24%;
   padding: 0 15% 0 40%;
   font-family: 'Arial';
   font-size: 12px;
   align-items: center;
+}
+
+@media (min-width: 576px) and (max-width: 750px) {
+  .menu_right {
+    display: none;
+  }
+
+  .attention {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .att_text {
+    font-family: "Cambria Math";
+    font-size: 20px;
+  }
+
+  .att_button {
+    align-self: center;
+  }
+
+  .left_text,
+  .right_credits {
+    font-size: 12px;
+  }
+ 
 }
