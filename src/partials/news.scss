@@ -1,15 +1,17 @@
 .big_news {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 40px 0;
     width: 100%;
     height: fit-content;
 }
 
 .main_news {
-    width: 65%;
+    width: 100%;
     margin-right: 2%;
     position: relative;
+    height: fit-content;
+    margin-bottom: 10px;
 }
 
 .main_photo {
@@ -18,9 +20,10 @@
 
 .main_head {
   font-family: "Times New Roman";
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 800;
-  padding: 5px 20px 10px 20px;
+  margin: 20px 0 40px 0;
+  padding-left: 0;
   
 }
 
@@ -29,7 +32,7 @@
     font-size: 14px;
     display: flex;
     flex-direction: row;
-    padding-left: 20px;
+    padding-left: 0;
     position: absolute;
     bottom: 10px;
 }
@@ -40,7 +43,9 @@
 }
 
 .sec_news {
-    width: 33%;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 10px;
         
 }
 
@@ -51,10 +56,11 @@
 }
 
 .sec_head {
-    font-size: 21px;
+    font-size: 30px;
     font-family: "Times New Roman";
     font-weight: 600;
-    margin: 10px 20px 30px 20px;
+    margin: 20px 0 40px 0;
+    padding-left: 0;
 }
 
 .main_news,
@@ -66,16 +72,17 @@
 
 .small_news {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     width: 100%;
     position: relative;
 }
 
 .row_news {
-    width: 32%;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 10px;
     position: relative;
-    height: 330px;
 }
 
 .row_img {

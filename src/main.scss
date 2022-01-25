@@ -29,9 +29,11 @@ a {
 }
 
 .menu_categor {
+  display: none;
+}
+
+.menu_right.menu_categor {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between; 
 }
 
 .with_line:hover {
@@ -99,7 +101,7 @@ a {
 
 .att_text {
   font-family: "Cambria Math";
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   color: rgb(255, 81, 0);
   text-align: center;
@@ -130,18 +132,17 @@ footer {
   display: flex;
   flex-direction: column;
   margin: 40px 0 0 -19%;
-  padding: 70px 15% 0 25%;
-  height: 470px;
-  width: 71vw;
-    
+  padding-left: 20px;
+  height: fit-content;
+  width: 95vw;
 }
 
 .foot_blue {
   background-color: rgb(0, 12, 38);
-  width: 100%;
-  height: 400px;
+  width: 98.5vw;
+  height: fit-content;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -157,8 +158,8 @@ footer {
 .left_text {
   color: #FFFFFF;
   font-family: 'Arial';
-  font-size: 17px;
-  height: 30px;
+  font-size: 12px;
+  height: 20px;
   display: flex;
   flex-direction: row;
   
@@ -172,9 +173,11 @@ footer {
 .right_credits {
   color: #FFFFFF;
   font-family: 'Arial';
-  font-size: 17px;
+  font-size: 12px;
   width: 90%;
   margin-top: 20px;
+  margin-bottom: 40px;
+  
 }
 
 .always_line a {
@@ -196,39 +199,13 @@ footer {
 .foot_white {
   background-color: #FFFFFF;
   height: 70px;
-  width: 84.3%;
+  width: 70%;
   display: flex;
   flex-direction: row;
-  margin: 0 0 0 -24%;
-  padding: 0 15% 0 40%;
+  margin-left: 0;
+  padding: 0 5% 0 25%;
   font-family: 'Arial';
   font-size: 12px;
   align-items: center;
-}
 
-@media (min-width: 576px) and (max-width: 750px) {
-  .menu_right {
-    display: none;
-  }
-
-  .attention {
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-  }
-
-  .att_text {
-    font-family: "Cambria Math";
-    font-size: 20px;
-  }
-
-  .att_button {
-    align-self: center;
-  }
-
-  .left_text,
-  .right_credits {
-    font-size: 12px;
-  }
- 
 }
